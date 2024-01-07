@@ -55,7 +55,7 @@ def Submit_Nilai():
     conn = sqlite3.connect("NilaiSiswa.db")
 
     cursor = conn.cursor()
-
+    """
     cursor.execute('''
             create table nilai_siswa (
                 id integer primary key autoincrement, 
@@ -66,7 +66,7 @@ def Submit_Nilai():
                 prediksi_fakultas text
             )
         ''')
-
+"""
     cursor.execute('''
             INSERT INTO nilai_siswa (nama_siswa, biologi, fisika, inggris, prediksi_fakultas)
             VALUES (?, ?, ?, ?, ?)
